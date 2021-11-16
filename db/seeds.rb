@@ -5,3 +5,5 @@ puts "🌱 Seeding spices..."
 puts "✅ Done seeding!"
 
 puts "this is a test"
+
+puts "hello"
