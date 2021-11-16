@@ -5,7 +5,7 @@ class CreateDogs < ActiveRecord::Migration[6.1]
       t.string :trick
       t.string :hobby
       t.string :quote
-      t.string :role
+      t.string :image
     end
   end
 end
