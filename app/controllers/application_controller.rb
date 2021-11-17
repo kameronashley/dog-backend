@@ -12,4 +12,24 @@ class ApplicationController < Sinatra::Base
     heists.to_json
   end
 
+  post '/heists' do
+    heist = Heist.create(
+      id: params[:id],
+      name: params[:name],
+      creator_name: params[:creator_name]
+    )
+    heist.to_json
+  end
+
+  
+
+
+
+
+
+
+
+
+
+
 end
