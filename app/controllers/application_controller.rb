@@ -12,6 +12,13 @@ class ApplicationController < Sinatra::Base
     heists.to_json
   end
 
+  get "/dogs/:id" do
+    dog = Dog.find(params[:id])
+    dog.to_json
+  end
+
+  
+
   post '/heists' do
     heist = Heist.create(
       id: params[:id],
@@ -21,7 +28,15 @@ class ApplicationController < Sinatra::Base
     heist.to_json
   end
 
+  delete '/heists/:id' do 
+    heist = Heist.find(params[:id])
+    heist.destroy
+    heist.to_json
+  end
+
   
+
+
 
 
 
