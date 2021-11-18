@@ -21,7 +21,6 @@ class ApplicationController < Sinatra::Base
 
   post '/heists' do
     heist = Heist.create(
-      id: params[:id],
       name: params[:name],
       creator_name: params[:creator_name]
     )
