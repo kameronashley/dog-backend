@@ -3,4 +3,7 @@ class Heist < ActiveRecord::Base
   has_many :dogs, through: :jobs
 
 
+
+
+
 end
