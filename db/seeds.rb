@@ -23,6 +23,15 @@ Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote
 Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/schipperke/n02104365_9369.jpg")
 Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/retriever-golden/n02099601_6772.jpg")
 Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/terrier-russell/little1.jpg")
+Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/terrier-patterdale/Patterdale.jpg")
+Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/bulldog-english/murphy.jpg")
+Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/papillon/n02086910_4623.jpg")
+Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/puggle/IMG_075427.jpg")
+Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/dalmatian/cooper2.jpg")
+Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/retriever-curly/n02099429_946.jpg")
+Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/spaniel-japanese/n02085782_564.jpg")
+Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/terrier-lakeland/n02095570_5796.jpg")
+Dog.create(name: Faker::Creature::Dog.name,  hobby: Faker::Hobby.activity, quote: Faker::TvShows::MichaelScott.quote, image: "https://images.dog.ceo/breeds/kelpie/n02105412_4061.jpg")
 
 
 # Seed your database here
@@ -33,26 +42,14 @@ Heist.create(name: "Puppers 11", creator_name: "Bark Pitt")
 Heist.create(name: "The Pupperanos", creator_name: "Fore Gettaboutit")
 
 puts "Seeding Jobs"
-13.times do
+23.times do
   dog_id = Dog.all.sample.id
   heist_id = Heist.all.sample.id 
-  roles = ["The Muscle", "The Distraction", "The Magician", "The Acrobat", "The Speedster", "The Brains", "The Cutey", "The Smooth Barker", "The Inside Dog", "Thief", "The Hacker", "The Sniffer"]
+  roles = ["The Muscle💪", "The Distraction💥", "The Magician🎩", "The Acrobat🤸", "The Speedster🚗", "The Brains🧠", "The Cutey🤗", "The Smooth Barker😈", "The Inside Dog😎", "The Thief😏", "The Hacker👨‍💻", "The Sniffer👃"]
   Job.create(role: roles.sample, treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
 end
 
 
-# Job.create(role: "The Muscle", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
-# Job.create(role: "The Distraction", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
-# Job.create(role: "The Magician", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
-# Job.create(role: "The Acrobat", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
-# Job.create(role: "The Speedster", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
-# Job.create(role: "The Brains", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
-# Job.create(role: "The Cutey", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
-# Job.create(role: "The Smooth Barker", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
-# Job.create(role: "The Inside Dog", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
-# Job.create(role: "Thief", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
-# Job.create(role: "The Hacker", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
-# Job.create(role: "The Sniffer", treat_payout: "#{rand(1000..10000)}treats", dog_id: dog_id, heist_id: heist_id)
 puts "✅ Done seeding!"
 
 puts "this is a test"
