@@ -28,8 +28,8 @@ gem "sinatra-activerecord", "~> 2.0"
 # https://github.com/ruby/rake
 gem "rake", "~> 13.0"
 
-# Provides functionality to interact with a SQLite3 database
-gem "sqlite3", "~> 1.4"
+#### Originally was working with sqlite3 but for purposes of deployment with Heroku, now using pg
+gem 'pg'
 
 # Require all files in a folder
 gem "require_all", "~> 3.0"
